@@ -1,0 +1,19 @@
+[build]
+command = "npx next build"
+publish = ".next"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+# Canonical host is https://verdao.ch — send www.verdao.ch to the apex with a
+# permanent redirect so link equity and canonicals never split across two hosts.
+[[redirects]]
+  from = "https://www.verdao.ch/*"
+  to = "https://verdao.ch/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/opengraph-image"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
