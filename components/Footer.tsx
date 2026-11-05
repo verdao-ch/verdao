@@ -25,19 +25,26 @@ export default function Footer() {
               Switzerland, developed under VERDAO. Handcrafted bamboo bicycles
               born from real craftsmanship, and from a story worth riding.
             </p>
-            <div className="flex gap-4 mt-6">
-              {[Instagram, Mail].map((Icon, i) => (
-                <a
-                  key={i}
-                  href={i === 0 ? "https://www.instagram.com/bamboobike.ch/" : "mailto:info@verdao.ch"
-                  rel={i === 0 ? "noopener noreferrer" : undefined}
-                  aria-label={i === 0 ? "BAMBOOGO on Instagram" : "Email BAMBOOGO"}
-                  className="w-10 h-10 rounded-xl bg-white/8 hover:bg-[#e6fd53] hover:text-[#0d0d0d] flex items-center justify-center transition-all duration-300 hover:scale-110"
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
-            </div>
+            
+<div className="flex gap-4 mt-6">
+  <a
+    href="https://www.instagram.com/bamboobike.ch/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="BAMBOOGO on Instagram"
+    className="w-10 h-10 rounded-xl bg-white/8 hover:bg-[#e6fd53] hover:text-[#0d0d0d] flex items-center justify-center transition-all duration-300 hover:scale-110"
+  >
+    <Instagram size={18} />
+  </a>
+  <a
+    href="mailto:info@verdao.ch"
+    aria-label="Email BAMBOOGO"
+    className="w-10 h-10 rounded-xl bg-white/8 hover:bg-[#e6fd53] hover:text-[#0d0d0d] flex items-center justify-center transition-all duration-300 hover:scale-110"
+  >
+    <Mail size={18} />
+  </a>
+</div>
+
           </div>
 
           {/* Discover */}
