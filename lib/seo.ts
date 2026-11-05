@@ -260,7 +260,7 @@ export function webPageNode({
     inLanguage: "en-CH",
     isPartOf: { "@id": `${siteConfig.url}/#website` },
     about: { "@id": `${siteConfig.url}/#brand` },
-    ...(breadcrumbsFor(path).length > 0
+    ...(path !== "/" && breadcrumbsFor(path).length > 0
   ? { breadcrumb: { "@id": `${absoluteUrl(path)}#breadcrumb` } }
   : {}),
   };
