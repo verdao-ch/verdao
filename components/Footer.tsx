@@ -28,7 +28,7 @@ export default function Footer() {
             
 <div className="flex gap-4 mt-6">
   <a
-    href="https://www.instagram.com/bamboobike.ch/"
+    href="https://www.instagram.com/bamboogo.ch/"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="BAMBOOGO on Instagram"
