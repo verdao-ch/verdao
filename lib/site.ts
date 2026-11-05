@@ -7,7 +7,7 @@ export const siteConfig = {
     ""
   ),
   locale: "en",
-  email: email: "info@verdao.ch",
+  email: "info@verdao.ch",
   city: "Bern",
   region: "Switzerland",
   country: "CH",
