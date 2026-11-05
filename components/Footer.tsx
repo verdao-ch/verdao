@@ -90,7 +90,9 @@ export default function Footer() {
               Say Hello
             </h4>
             <ul className="space-y-3">
-              <li className="text-white/50 text-sm"<li className="text-white/50 text-sm">info@verdao.ch</li>
+              
+<li className="text-white/50 text-sm">info@verdao.ch</li>
+
               <li className="text-white/50 text-sm">Bern, Switzerland</li>
             </ul>
           </div>
