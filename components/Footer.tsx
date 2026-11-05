@@ -29,7 +29,7 @@ export default function Footer() {
               {[Instagram, Mail].map((Icon, i) => (
                 <a
                   key={i}
-                  href={i === 0 ? "https://www.instagram.com/bamboobike.ch/" : "mailto:hello@bamboogo.ch"}
+                  href={i === 0 ? "https://www.instagram.com/bamboobike.ch/" : "mailto:info@verdao.ch"
                   rel={i === 0 ? "noopener noreferrer" : undefined}
                   aria-label={i === 0 ? "BAMBOOGO on Instagram" : "Email BAMBOOGO"}
                   className="w-10 h-10 rounded-xl bg-white/8 hover:bg-[#e6fd53] hover:text-[#0d0d0d] flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -83,7 +83,7 @@ export default function Footer() {
               Say Hello
             </h4>
             <ul className="space-y-3">
-              <li className="text-white/50 text-sm">hello@bamboogo.ch</li>
+              <li className="text-white/50 text-sm"<li className="text-white/50 text-sm">info@verdao.ch</li>
               <li className="text-white/50 text-sm">Bern, Switzerland</li>
             </ul>
           </div>
