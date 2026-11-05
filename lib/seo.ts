@@ -286,8 +286,8 @@ export function pageStructuredData({
     brandNode(),
     websiteNode(),
     webPageNode({ path, name, description }),
-    includeBreadcrumb
-      ? { ...breadcrumbsNode(breadcrumbsFor(path)), "@id": `${absoluteUrl(path)}#breadcrumb` }
+    includeBreadcrumb && breadcrumbsFor(path).length > 0
+      ? breadcrumbsNode(breadcrumbsFor(path))
       : null,
     contactPointNode(),
     ...extra,
